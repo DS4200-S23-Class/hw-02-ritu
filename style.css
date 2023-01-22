@@ -1,0 +1,17 @@
+body {
+	font-family: Arial;
+}
+
+.info {
+	text-align: center;
+}
+
+
+.column-name { background-color:#87bfe0;border-collapse:collapse;color:#000;font-size:18px; }
+.column-name th { background-color:#87bfe0;color:black;width:50%; }
+.column-name td, .column-name th { padding:5px;border:0; }
+.column-name td { border-bottom:20px solid #BDB76B; }
+
+
+
+
