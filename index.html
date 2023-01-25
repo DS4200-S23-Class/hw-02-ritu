@@ -4,53 +4,173 @@
 <head>
     <meta charset=utf-8/>
     <link rel="stylesheet" href="style.css">
-    <title>hw-02</title>
+    <title>hw-02</title> <!--Sets title to "hw-02"-->
 </head>
 
         <div>
-            <p id="data-abstraction">
+            <p id="data-abstraction"> <!-- Creates a new id called "data-abstraction" -->
                 <div class='info'>
-                        <h1>Dataset Types</h1>
-                            <table>
-                                <tr class='column-name'>
-                                    <th>Data</th>
-                                    <th>Link</th>
-                                    <th>Dataset Type</th>
-                                </tr>
+                        <h1>Dataset Types</h1> <!--Creates a header for Dataset Types -->
+                    
+                        <!--Creates css styling for the class dataset_types-->
+                        <td><style type="text/css">
+                            .dataset_types { background-color:#white;border-collapse:collapse;color:#000;font-size:18px; }
+                            .dataset_types th { background-color:skyblue;color:black;width:50%; }
+                            .dataset_types td, .dataset_types th { padding:5px;border:0; }
+                            .dataset_types td { border-bottom:1px dotted skyblue; }
+                        </style>
 
-                                <tr>
-                                    <td>Airports</td>
-                                    <td>
-                                        <a href="https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.023945%2C-71.694162%2C8.00&showTable=true">Link</a>
-                                    </td>
-                                    <td>Type</td>
-                                </tr>
+                        <!-- Creates a table for Dataset Types following the css styling in the lines above. -->
+                        <table class="dataset_types">
+                            <tr>
+                                <th>Data</th><th>Link</th><th>Dataset Type</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>UFO</td>
+                                <td>
+                                    <a href="data\UFO.csv">Link</a>
+                                </td>
+                                <td>Table</td>
+                            </tr>
+    
+                            <tr>
+                                <td>Airports</td>
+                                <td><a href="data\Airports.csv">Link</a>
+                                </td>
+                                <td>Table</td>
+                            </tr>
 
-                                <tr>
-                                    <td>Google-Web</td>
-                                    <td>
-                                        <a href=https://snap.stanford.edu/data/web-Google.html>Link</a>
-                                    </td>
-                                    <td>Type</td>
-                                </tr>
+                            <tr>
+                                <td>Google-Web</td>
+                                <td><a href="data\Google-Web.txt">Link</a>
+                                </td>
+                                <td>Table</td>
+                            </tr>
 
-                                <tr>
-                                    <td>UFO</td>
-                                    <td>
-                                        <a href=https://www.kaggle.com/datasets/NUFORC/ufo-sightings?resource=download>Link</a>
-                                    </td>
-                                    <td>Type</td>
+                        </table>
 
-                                </tr>
-                            </table>
 
                     </p>
 
                 </div>
+
+
+                <!-- Creates new section for Data Types -->
+                <div>
+                    <h1 id='data_types'>Data Types</h1>
+                    <h2>UFO</h2>
+                        <ul>
+                            <li>Row Data Type: Items</li>
+                            <li>Column "datetime": Attribute</li>
+                                <ul>
+                                    <li>
+                                        Cyclic
+                                    </li>
+                                </ul>
+                            <li>Column "city" : Attribute</li>
+                                <ul>
+                                    <li>
+                                        Categorical
+                                    </li>
+                                </ul>
+
+                            <li>Column "state" : Attribute</li>
+                                <ul>
+                                    <li>
+                                        Categorical
+                                    </li>
+                                </ul>  
+                            <li>Column "country" : Attribute</li>
+                                <ul>
+                                    <li>
+                                        Categorical
+                                    </li>
+                                </ul> 
+                            <li>Column "shape" : Attribute</li>
+                                <ul>
+                                    <li>
+                                        Categorical
+                                    </li>
+                                </ul>
+                            <li>Column "duration (seconds)" : </li>
+                                <ul>
+                                    <li>
+                                        Quantitative
+                                    </li>
+                                </ul>
+
+
+                        </ul>
+                    <h2>Airports</h2>
+                        <ul>
+                            <li>Row Data Type: Items</li>
+                            <li>Column "AIRPORT_NAME": Attribute</li>
+                                <ul>
+                                    <li>
+                                        Categorical
+                                    </li>
+                                </ul>
+                            <li>Column "LATITUDE": Postition</li>
+                            <li>Column "LONGITUDE": Postition</li>
+                        </ul>
+                    <h2>Google-Web</h2>
+                        <ul>
+                            <li>Row Data Type: Link</li>
+                            <li>Column "FromNodeId" : </li>
+                                <ul>
+                                    <li>
+                                        Quantitative
+                                    </li>
+                                </ul>
+                            <li>Column "ToNodeId" : </li>
+                                <ul>
+                                    <li>
+                                        Quantitative
+                                    </li>
+                                </ul>
+
+                        </ul>
+
+                </div>
+
+
+
             </p>
 
 
         </div>
+
+        <!-- Creates a new section for the Acknowledgements which shows an unordered list of resources used in this assignment. -->
+
+        <h1 id= "acknowledgements">Acknowledgements</h1>
+
+        <div>
+
+        <ul>
+            <li>
+                <a href="https://www.geeksforgeeks.org/html-lists/?ref=lbp">https://www.geeksforgeeks.org/html-lists/?ref=lbp</a>
+            </li>
+
+            <li>
+                <a href="https://www.html.am/html-codes/tables/table-border.cfm#:~:text=You%20can%20get%20a%20quick,border%2C%20use%20a%20greater%20number">https://www.html.am/html-codes/tables/table-border.cfm#:~:text=You%20can%20get%20a%20quick,border%2C%20use%20a%20greater%20number</a>
+            </li>
+
+            <li>
+                <a href="https://www.w3schools.com/html/html_links.asp">https://www.w3schools.com/html/html_links.asp</a>
+
+            </li>
+
+            <li>
+                <a href="https://stackoverflow.com/questions/12021781/the-right-way-of-setting-a-href-when-its-a-local-file">https://stackoverflow.com/questions/12021781/the-right-way-of-setting-a-href-when-its-a-local-file</a>
+
+            </li>
+
+
+        </ul>
+
+        </div>
+
 
 
 <body>
