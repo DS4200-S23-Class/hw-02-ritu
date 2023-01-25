@@ -1,16 +1,31 @@
+/*Ensures all the text in the index.html file has font Arial*/
+
 body {
 	font-family: Arial;
 }
 
+/*Everything in the class "info" will be centered*/
 .info {
 	text-align: center;
 }
 
+/*Everything in the id "acknowledgements" will be black, bold, have a medium font size, and centered.*/
+#acknowledgements {
+	color: black;
+	font-weight: bold;
+	font-size: medium;
+	text-align: center;
+}
 
-.column-name { background-color:#87bfe0;border-collapse:collapse;color:#000;font-size:18px; }
-.column-name th { background-color:#87bfe0;color:black;width:50%; }
-.column-name td, .column-name th { padding:5px;border:0; }
-.column-name td { border-bottom:20px solid #BDB76B; }
+/*Everything in the id "data_types" will be centered, bold, and black.*/
+#data_types {
+	text-align: center;
+	font-weight: bold;
+	color:black;
+}
+
+
+
 
 
 
