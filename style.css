@@ -25,6 +25,64 @@ body {
 }
 
 
+.centered {
+	text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    border: 1px solid #d3d3d3;
+    align-self: stretch;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 5px;
+}
+
+.vis1 {
+	align-self: center;
+}
+
+.vis2 {
+	align-self: center;
+}
+
+.right-column {
+    order: +1;
+}
+
+.p1 {
+	text-align: left;
+}
+
+.circle {
+	fill:rgb(204,102,51);
+} 
+
+.circle:hover {
+	stroke-width:3;stroke:rgb(98,128,84);
+}
+
+.rectangle {
+	stroke-width:3;
+	fill:rgb(140,183,125);
+	stroke:rgb(98,128,84);
+}
+
+.rectangle:hover {
+	fill:rgb(204,102,51);
+}
 
 
 
